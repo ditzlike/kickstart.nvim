@@ -17,3 +17,10 @@ vim.keymap.set('i', 'üa', '<C-o>%')
 vim.keymap.set('i', 'üq', '<C-o>%<C-o>%<C-o>a')
 vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
 vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
+
+-- hop.nvim --
+vim.keymap.set('n', 's', ':HopChar2<CR>')
+vim.keymap.set('n', '<C-f>', ':HopPattern<CR>')
+
+-- peartree -- 
+vim.g.pear_tree_repeatable_expand = 0

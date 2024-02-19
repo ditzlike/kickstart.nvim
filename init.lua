@@ -120,6 +120,7 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
+  require 'custom.plugins.general'
 }, {})
 
 --TODO
@@ -137,6 +138,9 @@ require 'kickstart.configs.treesitter'
 require 'kickstart.configs.lsp'
 
 require 'kickstart.configs.nvim-cmp'
+
+
+-- [[ My own stuff]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
