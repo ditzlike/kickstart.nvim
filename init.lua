@@ -128,6 +128,7 @@ require('lazy').setup({
 
 -- [[ Basic Keymaps ]]
 require 'custom.configs.mappings'
+require 'custom.configs.nvim-tree'
 --TODO
 --require 'kickstart.configs.mappings'
 
