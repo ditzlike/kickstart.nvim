@@ -69,17 +69,18 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
-  require 'kickstart.plugins.git',
+  --require 'kickstart.plugins.git',
 
   -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
+  --'tpope/vim-sleuth',
 
+  -- These two go together
   require 'kickstart.plugins.lsp',
-
   require 'kickstart.plugins.autocomplete',
 
+
   --TODO
-  --require 'kickstart.plugins.whichkey',
+  require 'kickstart.plugins.whichkey',
 
   --TODO
   --require 'kickstart.plugins.git-signs',
@@ -100,7 +101,7 @@ require('lazy').setup({
   --},
 
   -- TODO
-  require 'kickstart.plugins.comment',
+  --require 'kickstart.plugins.comment',
 
   require 'kickstart.plugins.fuzzyfinder',
   --require 'custom.plugins.telescope',
@@ -120,6 +121,7 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
+  -- this is where I put some personal plugins
   require 'custom.plugins.general'
 }, {})
 
@@ -136,8 +138,8 @@ require 'kickstart.configs.telescope'
 
 require 'kickstart.configs.treesitter'
 
+-- these two go together
 require 'kickstart.configs.lsp'
-
 require 'kickstart.configs.nvim-cmp'
 
 
