@@ -5,7 +5,11 @@ return {
     version = "*",
     opts = {},
   },
-  'tmsvg/pear-tree',
+ {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+},
   {
     'nvim-tree/nvim-tree.lua',
     requires = {
