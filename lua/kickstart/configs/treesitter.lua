@@ -61,12 +61,13 @@ vim.defer_fn(function()
       },
       swap = {
         enable = true,
-        swap_next = {
-          ['<leader>a'] = '@parameter.inner',
-        },
-        swap_previous = {
-          ['<leader>A'] = '@parameter.inner',
-        },
+	--swap parameters, but this mapping conflicts harpoon
+        --swap_next = {
+        --  ['<leader>a'] = '@parameter.inner',
+        --},
+        --swap_previous = {
+        --  ['<leader>A'] = '@parameter.inner',
+        --},
       },
     },
   }

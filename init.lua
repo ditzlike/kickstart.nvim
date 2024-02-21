@@ -105,6 +105,7 @@ require('lazy').setup({
   --require 'kickstart.plugins.comment',
 
   require 'kickstart.plugins.fuzzyfinder',
+  --decided to go with the new mappings
   --require 'custom.plugins.telescope',
 
   require 'kickstart.plugins.treesitter',
@@ -131,7 +132,6 @@ require('lazy').setup({
 
 -- [[ Basic Keymaps ]]
 require 'custom.configs.mappings'
-require 'custom.configs.nvim-tree'
 --TODO
 --require 'kickstart.configs.mappings'
 
@@ -145,6 +145,8 @@ require 'kickstart.configs.nvim-cmp'
 
 
 -- [[ My own stuff]]
+require 'custom.configs.harpoon'
+require 'custom.configs.nvim-tree'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

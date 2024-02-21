@@ -10,6 +10,11 @@ return {
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
 },
+	{
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
+},
   {
     'nvim-tree/nvim-tree.lua',
     requires = {
