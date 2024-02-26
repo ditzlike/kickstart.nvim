@@ -1,0 +1,27 @@
+generelle Struktur:
+-plugins -> Nur plugins
+-configs -> Mappings und sonstige Einstellungen, generell versucht immer modular 
+
+
+custom: custom Sachen, eigenes
+---------------------------------
+-plugins
+- - general.lua: Liste von einzelnen Plugins, die ich von davor mitgenommen hab, namely hop, autopairs, harpoon und nvim-tree
+- - not_init.lua: von davor aus kickstart übernommen
+---------------------------------
+-configs
+- - harpoon configs
+- - eigene mappings
+- - nvim-tree mappings, steht noch TODO disable tab drin. Normale defaults werden gesetupt, Rest ist auskommentiert
+
+----------------------------------------------
+kickstart: alles mögliche, was ich aus kickstart entnommen habe
+---------------------------------
+-configs
+- - mappings von kickstart such as word wrap, some diagnostic shit that does not work
+- - lsp mit telescope mapping reindefiniert, sowas wie gd, gr, gI <leader>D
+- - nvim-cmp hat mappings zu cmp und bestimmte sources, sowas wie nvim_lsp, luasnip und path
+- - generell vim-options, sowas wie ignorecase oder so
+- - telescope.lua: telescope actions, mappings, git_root search
+
+
