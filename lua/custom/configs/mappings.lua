@@ -22,7 +22,7 @@ vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
 vim.keymap.set('n', '<leader>h', ':HopChar2<CR>')
 vim.keymap.set('n', '<C-f>', ':HopPattern<CR>')
 
--- peartree -- 
+-- peartree --
 vim.g.pear_tree_repeatable_expand = 0
 
 -- telescope --
