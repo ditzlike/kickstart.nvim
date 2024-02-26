@@ -75,7 +75,6 @@ require('lazy').setup({
   --'tpope/vim-sleuth',
 
   -- These two go together
-  require 'kickstart.plugins.lsp',
   require 'kickstart.plugins.autocomplete',
 
 

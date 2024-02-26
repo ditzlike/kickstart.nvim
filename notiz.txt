@@ -32,7 +32,6 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 - - fuzzyfinder.lua: telescope installation-> TODO: duplicate shit aus telescope.lua aus configs
 - - git.lua: git related plugins
 - - git-signs.lua: ka alter TODO
-- - lsp.lua: wieder iwas mit nvim-lspconfig: TODO -> mit autocomplete.lua abgleichen
 - - lualine: ka alter TODO
 - - theme.lua: hübsch
 - - treesitter.lua: installiert treesitter: TODO -> Treesitter hier reinziehen
