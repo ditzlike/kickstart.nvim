@@ -38,3 +38,6 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 - - which-key: einfach nur which-key
 
 
+plenary-Error: https://www.reddit.com/r/neovim/comments/13rsado/failed_to_source/
+find ~/.config/nvim -type f -exec dos2unix {} \;
+find ~/.local/share/nvim -type f -exec dos2unix {} \;
