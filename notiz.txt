@@ -28,7 +28,7 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 - - autocomplete.lua: autocomplete collection
 - - autoformat.lua: neovim/lspfconfig mit options
 - - comment.lua: comment plugin
-- - debug.lua: nvim-dap noch nie probiert
+- - debug.lua: nvim-dap noch nie probiert TODO mal ausprobieren
 - - fuzzyfinder.lua: telescope installation-> TODO: duplicate shit aus telescope.lua aus configs
 - - git.lua: git related plugins
 - - git-signs.lua: ka alter TODO
@@ -36,6 +36,10 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 - - theme.lua: hübsch
 - - treesitter.lua: installiert treesitter: TODO -> Treesitter hier reinziehen
 - - which-key: einfach nur which-key
+
+
+TODO:
+- fucking f1 mal rausnehmen, das Terminal unten suckt, such dir was Besseres. Was hat Findi nochmal vorgeschlagen?
 
 
 plenary-Error: https://www.reddit.com/r/neovim/comments/13rsado/failed_to_source/
