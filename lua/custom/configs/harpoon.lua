@@ -3,6 +3,7 @@ local harpoon = require('harpoon')
 -- REQUIRED
 harpoon:setup()
 -- REQUIRED
+-- TODO: fuer which-key hinzufuegen, was die Sachen machen
 
 vim.keymap.set('n', '<leader>a', function() harpoon:list():append() end)
 vim.keymap.set('n', '<C-e>', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)

@@ -74,7 +74,6 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   --'tpope/vim-sleuth',
 
-  -- These two go together
   require 'kickstart.plugins.autocomplete',
 
 
@@ -129,6 +128,7 @@ require('lazy').setup({
 --require 'custom.configs.options'
 
 -- [[ Basic Keymaps ]]
+-- my own mappings :>
 require 'custom.configs.mappings'
 --TODO
 --require 'kickstart.configs.mappings'
