@@ -121,7 +121,8 @@ require('lazy').setup({
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
   -- this is where I put some personal plugins
-  require 'custom.plugins.general'
+  require 'custom.plugins.general',
+  require 'custom.plugins.toggleterm'
 }, {})
 
 --TODO
@@ -145,6 +146,7 @@ require 'kickstart.configs.nvim-cmp'
 -- [[ My own stuff]]
 require 'custom.configs.harpoon'
 require 'custom.configs.nvim-tree'
+require 'custom.configs.toggleterm'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
