@@ -39,8 +39,10 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 
 
 TODO:
-- fucking f1 mal rausnehmen, das Terminal unten suckt, such dir was Besseres. Was hat Findi nochmal vorgeschlagen? Toggleterm
 - LSP rust-analyzer einbauen -> Done, aber TODO: mach's doch mal modular, das stoert mich iwie
+- generell mal modularer machen, ich brauch ned config und plugin extra
+- Immer diese Errors bei obsidian nerven
+- schau mal, dass bei telescope im Auswahlmodus <c-o> als exit funktioniert, das pisst an
 
 
 plenary-Error: https://www.reddit.com/r/neovim/comments/13rsado/failed_to_source/

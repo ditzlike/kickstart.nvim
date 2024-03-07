@@ -227,8 +227,9 @@ require('obsidian').setup {
 
   -- Optional, configure additional syntax highlighting / extmarks.
   -- This requires you have `conceallevel` set to 1 or 2. See `:help conceallevel` for more details.
+  --
   ui = {
-    enable = true,         -- set to false to disable all additional syntax features
+    enable = false,        -- set to false to disable all additional syntax features
     update_debounce = 200, -- update delay after a text change (in milliseconds)
     -- Define how various check-boxes are displayed
     checkboxes = {
@@ -299,4 +300,6 @@ require('obsidian').setup {
 vim.keymap.set('n', '<leader>ot', ':ObsidianToday<CR>', silenced)
 vim.keymap.set('n', '<leader>oy', ':ObsidianYesterday<CR>', silenced)
 vim.keymap.set('n', '<leader>om', ':ObsidianTomorrow<CR>', silenced)
-vim.keymap.set('n', '<leader>os', ':ObsidianQuickSwitch<CR>', silenced)
+vim.keymap.set('n', '<leader>oq', ':ObsidianQuickSwitch<CR>', silenced)
+vim.keymap.set('n', '<leader>os', ':ObsidianSearch<CR>', silenced)
+vim.keymap.set('n', '<leader>on', ':ObsidianNew<CR>', silenced)
