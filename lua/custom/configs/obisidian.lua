@@ -294,3 +294,9 @@ require('obsidian').setup {
     end,
   },
 }
+-- obsidian
+--vim.keymap.set('n', '<leader>oo', ':ObsidianOpen<CR>', silenced)
+vim.keymap.set('n', '<leader>ot', ':ObsidianToday<CR>', silenced)
+vim.keymap.set('n', '<leader>oy', ':ObsidianYesterday<CR>', silenced)
+vim.keymap.set('n', '<leader>om', ':ObsidianTomorrow<CR>', silenced)
+vim.keymap.set('n', '<leader>os', ':ObsidianQuickSwitch<CR>', silenced)
