@@ -122,6 +122,7 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
   -- this is where I put some personal plugins
   require 'custom.plugins.general',
+  require 'custom.plugins.obsidian',
   require 'custom.plugins.toggleterm'
 }, {})
 
@@ -147,6 +148,7 @@ require 'kickstart.configs.nvim-cmp'
 require 'custom.configs.harpoon'
 require 'custom.configs.nvim-tree'
 require 'custom.configs.toggleterm'
+require 'custom.configs.obisidian'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
