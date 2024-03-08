@@ -35,7 +35,7 @@ require('obsidian').setup {
     -- Optional, if you keep daily notes in a separate directory.
     folder = 'notes/dailies',
     -- Optional, if you want to change the date format for the ID of daily notes.
-    date_format = '%Y-%m-%d',
+    date_format = '%d-%m-%Y',
     -- Optional, if you want to change the date format of the default alias of daily notes.
     alias_format = '%B %-d, %Y',
     -- Optional, if you want to automatically insert a template from your template directory like 'daily.md'
@@ -156,7 +156,7 @@ require('obsidian').setup {
   -- Optional, for templates (see below).
   templates = {
     subdir = 'templates',
-    date_format = '%Y-%m-%d',
+    date_format = '%d-%m-%Y',
     time_format = '%H:%M',
     -- A map for custom variables, the key should be the variable and the value a function
     substitutions = {},

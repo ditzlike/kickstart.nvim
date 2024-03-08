@@ -135,7 +135,7 @@ require 'custom.configs.mappings'
 --TODO
 --require 'kickstart.configs.mappings'
 
---require 'kickstart.configs.telescope'
+require 'kickstart.configs.telescope'
 
 require 'kickstart.configs.treesitter'
 

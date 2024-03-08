@@ -20,7 +20,7 @@ return {
 
     -- Additional lua configuration, makes nvim stuff amazing!
     'folke/neodev.nvim',
-        -- RUST LSP
+    -- RUST LSP
     'simrat39/rust-tools.nvim',
     requires = {
       'neovim/nvim-lspconfig',

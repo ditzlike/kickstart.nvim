@@ -25,9 +25,9 @@ vim.keymap.set('n', '<C-f>', ':HopPattern<CR>')
 -- peartree --
 vim.g.pear_tree_repeatable_expand = 0
 
--- telescope --
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[/] find files]' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = '[/] live grep]' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = '[/] buffers]' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = '[/] help tags]' })
+-- telescope -- I want to get rid of these
+--local builtin = require('telescope.builtin')
+--vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[/] find files]' })
+--vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = '[/] live grep]' })
+--vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = '[/] buffers]' })
+--vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = '[/] help tags]' })
