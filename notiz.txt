@@ -41,8 +41,8 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 TODO:
 - LSP rust-analyzer einbauen -> Done, aber TODO: mach's doch mal modular, das stoert mich iwie
 - generell mal modularer machen, ich brauch ned config und plugin extra
-- Immer diese Errors bei obsidian nerven
 - schau mal, dass bei telescope im Auswahlmodus <c-o> als exit funktioniert, das pisst an
+- was machen denn templates in obsidian
 
 
 plenary-Error: https://www.reddit.com/r/neovim/comments/13rsado/failed_to_source/
