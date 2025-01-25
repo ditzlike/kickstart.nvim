@@ -72,6 +72,15 @@ return {
           return
         end
 
+        -- Skip the formatting autocmd for files in the excluded directory
+        local excluded_directory = '~/vaults/'
+        print('excluded_directory')
+        print(excluded_directory)
+        local file_path = vim.api.nvim_buf_get_name(bufnr)
+        if file_path:find(excluded_directory, 1, true) == 1 then
+          return
+        end
+
         -- Create an autocmd that will run *before* we save the buffer.
         --  Run the formatting command for the LSP that has just attached.
         vim.api.nvim_create_autocmd('BufWritePre', {
