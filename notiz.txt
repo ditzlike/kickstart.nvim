@@ -35,7 +35,6 @@ kickstart: alles mögliche, was ich aus kickstart entnommen habe
 - - lualine: ka alter TODO
 - - theme.lua: hübsch
 - - treesitter.lua: installiert treesitter: TODO -> Treesitter hier reinziehen
-- - which-key: einfach nur which-key
 
 
 TODO:

@@ -15,12 +15,12 @@ return {
     branch = 'harpoon2',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  --{
-  --  'nvim-tree/nvim-tree.lua',
-  --  requires = {
-  --    'nvim-tree/nvim-web-devicons', -- optional
-  --  }
-  --},
+  {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    }
+  },
   {
     'lervag/vimtex',
     lazy = false, -- we don't want to lazy load VimTeX

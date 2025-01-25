@@ -146,7 +146,7 @@ require 'kickstart.configs.nvim-cmp'
 
 -- [[ My own stuff]]
 require 'custom.configs.harpoon'
---require 'custom.configs.nvim-tree'
+require 'custom.configs.nvim-tree'
 require 'custom.configs.toggleterm'
 require 'custom.configs.obisidian'
 
