@@ -27,9 +27,13 @@ return {
         path = '~/vaults/work',
       },
     },
+    ui = {
+      enable = false
+    }
 
     -- see below for full list of options 👇
   },
+
 }
 --return {
 --  'ada0l/obsidian',
