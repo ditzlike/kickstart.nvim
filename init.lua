@@ -55,8 +55,11 @@ require('lazy').setup({
   --require 'custom.plugins.telescope',
 
   require 'plugins.treesitter',
+  require 'plugins.nvim-tree',
   require 'plugins.colourscheme',
   require 'plugins.obsidian',
+  require 'plugins.hop',
+  require 'plugins.harpoon'
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -99,7 +102,6 @@ require 'style'
 
 
 -- [[ My own stuff]]
---require 'custom.configs.harpoon'
 --require 'custom.configs.nvim-tree'
 --require 'custom.configs.toggleterm'
 --require 'custom.configs.obisidian'
