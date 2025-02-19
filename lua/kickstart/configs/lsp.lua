@@ -63,6 +63,7 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   rust_analyzer = {},
+  clangd = {},
   marksman = { filetypes = { 'md' } },
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
@@ -99,6 +100,22 @@ mason_lspconfig.setup_handlers {
       settings = servers[server_name],
       filetypes = (servers[server_name] or {}).filetypes,
     }
+  end,
+  ['clangd'] = function()
+    lspconfig['clangd'].setup({
+      capabilities = utils.merge(lsp_capabilities, { offsetEncoding = 'utf-8' }),
+      cmd = {
+        'clangd',
+        '--background-index',
+        '--clang-tidy',
+        '--header-insertion=iwyu',
+        '--completion-style=detailed',
+        -- '--function-arg-placeholders=0',
+        '-j=4',
+        '--fallback-style=llvm',
+      },
+      -- init_options = { compilationDatabasePath = './build-cc' },
+    })
   end,
 
   -- [[rust_analyzer]]

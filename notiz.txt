@@ -1,3 +1,5 @@
+Langsam an Mmintel Struktur angepasst
+
 generelle Struktur:
 -plugins -> Nur plugins
 -configs -> Mappings und sonstige Einstellungen, generell versucht immer modular 
