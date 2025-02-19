@@ -131,7 +131,8 @@ require('lazy').setup({
 
 -- [[ Basic Keymaps ]]
 -- my own mappings :>
-require 'custom.configs.mappings'
+require 'mappings'
+require 'settings'
 --TODO
 --require 'kickstart.configs.mappings'
 
