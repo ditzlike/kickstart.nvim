@@ -1,3 +1,6 @@
+local map = require('utils').map
+local cmd = require('utils').cmd
+
 vim.g.mapleader = ' ' -- easy to reach leader key
 vim.keymap.set('n', 'ä', '$')
 vim.keymap.set('n', 'ö', '^')
@@ -24,6 +27,18 @@ vim.keymap.set('n', '<C-f>', ':HopPattern<CR>')
 
 -- peartree --
 vim.g.pear_tree_repeatable_expand = 0
+
+-- lsp --
+map('n', 'gD', cmd('lua vim.lsp.buf.declaration()'), silenced)
+map('n', 'gd', cmd('Telescope lsp_definitions'), silenced)
+map('n', 'gi', cmd('Telescope lsp_implementations'), silenced)
+map('n', 'gr', cmd('Telescope lsp_references'), silenced)
+map('n', '<F2>', cmd('lua vim.diagnostic.goto_next()', 'zzzv'), silenced)
+map('n', '<S-F2>', cmd('lua vim.diagnostic.goto_prev()', 'zzzv'), silenced)
+map('n', '<C-k>', cmd('lua vim.lsp.buf.signature_help()'), silenced)
+map('n', '<leader>rn', cmd('lua vim.lsp.buf.rename()'), silenced)
+map('n', '<leader>ca', cmd('lua vim.lsp.buf.code_action()'), silenced)
+map('n', '<C-l>', cmd('lua vim.lsp.buf.format({ async = true })'), silenced)
 
 -- telescope -- I want to get rid of these
 --local builtin = require('telescope.builtin')
