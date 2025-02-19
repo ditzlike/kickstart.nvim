@@ -26,7 +26,7 @@ require('lazy').setup({
 
 
   --TODO
-  --require 'plugins.whichkey',
+  require 'plugins.whichkey',
   require 'plugins.lsp',
 
   --TODO
@@ -55,6 +55,7 @@ require('lazy').setup({
   --require 'custom.plugins.telescope',
 
   require 'plugins.treesitter',
+  require 'plugins.colourscheme',
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -74,6 +75,8 @@ require('lazy').setup({
   --require 'custom.plugins.obsidian',
   --require 'custom.plugins.toggleterm'
 }, {})
+
+-- Wenn fertig: require alle plugins
 
 --TODO
 --require 'custom.configs.options'
