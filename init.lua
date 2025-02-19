@@ -74,19 +74,19 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   --'tpope/vim-sleuth',
 
-  require 'kickstart.plugins.autocomplete',
+  require 'plugins.autocomplete',
 
 
   --TODO
-  require 'kickstart.plugins.whichkey',
+  require 'plugins.whichkey',
 
   --TODO
-  --require 'kickstart.plugins.git-signs',
+  --require 'plugins.git-signs',
 
-  require 'kickstart.plugins.theme',
+  require 'plugins.theme',
 
   --TODO
-  --require 'kickstart.plugins.lualine',
+  --require '.plugins.lualine',
 
   -- TODO
   --{
@@ -99,18 +99,18 @@ require('lazy').setup({
   --},
 
   -- TODO
-  --require 'kickstart.plugins.comment',
+  --require '.plugins.comment',
 
-  require 'kickstart.plugins.fuzzyfinder',
+  require 'plugins.fuzzyfinder',
   --decided to go with the new mappings
   --require 'custom.plugins.telescope',
 
-  require 'kickstart.plugins.treesitter',
+  require 'plugins.treesitter',
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
-  require 'kickstart.plugins.autoformat',
+  require 'plugins.autoformat',
   --require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -134,15 +134,15 @@ require('lazy').setup({
 require 'mappings'
 require 'settings'
 --TODO
---require 'kickstart.configs.mappings'
+--require 'configs.mappings'
 
-require 'kickstart.configs.telescope'
+require 'plugins.telescope'
 
-require 'kickstart.configs.treesitter'
+require 'plugins.treesitter'
 
 -- these two go together
-require 'kickstart.configs.lsp'
-require 'kickstart.configs.nvim-cmp'
+require 'plugins.lsp'
+require 'plugins.nvim-cmp'
 
 
 -- [[ My own stuff]]
