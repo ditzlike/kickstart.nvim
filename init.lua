@@ -14,17 +14,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup({
-  require 'plugins.colourscheme',
-  require 'plugins.fuzzyfinder',
-  require 'plugins.harpoon',
-  require 'plugins.hop',
-  require 'plugins.lsp',
-  require 'plugins.nvim-tree',
-  require 'plugins.treesitter',
-  require 'plugins.obsidian',
-}, {})
--- Wenn fertig: require alle plugins
 require 'mappings'
 require 'settings'
 require 'style'
+
+require('lazy').setup('plugins')
