@@ -1,16 +1,4 @@
--- disable netrw at the very start of your init.lua
--- TODO: disable tab
---vim.g.loaded_netrw = 1
---vim.g.loaded_netrwPlugin = 1
---
-vim.keymap.set('n', '<C-n>', ':NvimTreeToggle <CR>')
-
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
--- optionally enable 24-bit colour
-vim.opt.termguicolors = true
+local cmd = require('utils').cmd
 
 return {
     'nvim-tree/nvim-tree.lua',
@@ -22,5 +10,8 @@ return {
                 resize_window = false,
             },
         },
+    },
+    keys = {
+        { '<C-n>', cmd('NvimTreeToggle') },
     },
 }
