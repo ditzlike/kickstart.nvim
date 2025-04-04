@@ -37,37 +37,37 @@ local function lsp_config()
 
     vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, float_opts)
 
-    require('mason-lspconfig').setup({ ensure_installed = lsp_list })
-    require('mason-lspconfig').setup_handlers({
-        function(server_name)
-            lspconfig[server_name].setup({
-                capabilities = lsp_capabilities,
-            })
-        end,
-        ['clangd'] = function()
-            lspconfig['clangd'].setup({
-                capabilities = utils.merge(lsp_capabilities, { offsetEncoding = 'utf-8' }),
-                cmd = {
-                    'clangd',
-                    '--background-index',
-                    '--clang-tidy',
-                    '--header-insertion=iwyu',
-                    '--completion-style=detailed',
-                    -- '--function-arg-placeholders=0',
-                    '-j=4',
-                    '--fallback-style=llvm',
-                },
-                -- init_options = { compilationDatabasePath = './build-cc' },
-            })
-        end,
-        ['rust_analyzer'] = function()
-            lspconfig['rust_analyzer'].setup({
-                settings = {
-                    ['rust-analyzer'] = {}
-                },
-            })
-        end,
-    })
+    --require('mason-lspconfig').setup({ ensure_installed = lsp_list })
+    --require('mason-lspconfig').setup_handlers({
+    --    function(server_name)
+    --        lspconfig[server_name].setup({
+    --            capabilities = lsp_capabilities,
+    --        })
+    --    end,
+    --    ['clangd'] = function()
+    --        lspconfig['clangd'].setup({
+    --            capabilities = utils.merge(lsp_capabilities, { offsetEncoding = 'utf-8' }),
+    --            cmd = {
+    --                'clangd',
+    --                '--background-index',
+    --                '--clang-tidy',
+    --                '--header-insertion=iwyu',
+    --                '--completion-style=detailed',
+    --                -- '--function-arg-placeholders=0',
+    --                '-j=4',
+    --                '--fallback-style=llvm',
+    --            },
+    --            -- init_options = { compilationDatabasePath = './build-cc' },
+    --        })
+    --    end,
+    --    ['rust_analyzer'] = function()
+    --        lspconfig['rust_analyzer'].setup({
+    --            settings = {
+    --                ['rust-analyzer'] = {}
+    --            },
+    --        })
+    --    end,
+    --})
 end
 
 local function cmp_config()
@@ -247,19 +247,19 @@ end
 
 return {
     -- server manager
-    {
-        'williamboman/mason.nvim',
-        event = { 'BufReadPre', 'BufNewFile', 'VeryLazy' },
-        opts = {
-            ui = {
-                icons = {
-                    package_installed = style.icons.lsp.mason.installed,
-                    package_pending = style.icons.lsp.mason.pending,
-                    package_uninstalled = style.icons.lsp.mason.uninstalled,
-                },
-            },
-        }
-    },
+    --{
+    --    'williamboman/mason.nvim',
+    --    event = { 'BufReadPre', 'BufNewFile', 'VeryLazy' },
+    --    opts = {
+    --        ui = {
+    --            icons = {
+    --                package_installed = style.icons.lsp.mason.installed,
+    --                package_pending = style.icons.lsp.mason.pending,
+    --                package_uninstalled = style.icons.lsp.mason.uninstalled,
+    --            },
+    --        },
+    --    }
+    --},
     -- LSP
     {
         'neovim/nvim-lspconfig',
@@ -313,53 +313,53 @@ return {
         config = true
     },
     -- debugger
-    {
-        'rcarriga/nvim-dap-ui',
-        event = { 'BufReadPre', 'BufNewFile' },
-        dependencies = {
-            { 'nvim-neotest/nvim-nio' },
-            {
-                'mfussenegger/nvim-dap',
-                dependencies = {
-                    'jayp0521/mason-nvim-dap.nvim',
-                    opts = {
-                        ensure_installed = dap_list,
-                        handlers = {},
-                    },
-                },
-                config = dap_config,
-            },
-        },
-        opts = {
-            controls = {
-                enabled = false,
-            },
-            windows = {
-                indent = 2,
-            },
-            floating = {
-                border = style.current.border,
-            },
-            layouts = {
-                {
-                    elements = {
-                        { id = 'scopes',      size = 0.25, },
-                        { id = 'breakpoints', size = 0.25, },
-                        { id = 'stacks',      size = 0.25, },
-                        { id = 'watches',     size = 0.25, },
-                    },
-                    position = 'left',
-                    size = 40,
-                },
-                {
-                    elements = {
-                        { id = 'console', size = 1, },
-                    },
-                    position = 'bottom',
-                    size = 10,
-                },
-            },
-        },
-    },
+    --{
+    --    'rcarriga/nvim-dap-ui',
+    --    event = { 'BufReadPre', 'BufNewFile' },
+    --    dependencies = {
+    --        { 'nvim-neotest/nvim-nio' },
+    --        {
+    --            'mfussenegger/nvim-dap',
+    --            dependencies = {
+    --                'jayp0521/mason-nvim-dap.nvim',
+    --                opts = {
+    --                    ensure_installed = dap_list,
+    --                    handlers = {},
+    --                },
+    --            },
+    --            config = dap_config,
+    --        },
+    --    },
+    --    opts = {
+    --        controls = {
+    --            enabled = false,
+    --        },
+    --        windows = {
+    --            indent = 2,
+    --        },
+    --        floating = {
+    --            border = style.current.border,
+    --        },
+    --        layouts = {
+    --            {
+    --                elements = {
+    --                    { id = 'scopes',      size = 0.25, },
+    --                    { id = 'breakpoints', size = 0.25, },
+    --                    { id = 'stacks',      size = 0.25, },
+    --                    { id = 'watches',     size = 0.25, },
+    --                },
+    --                position = 'left',
+    --                size = 40,
+    --            },
+    --            {
+    --                elements = {
+    --                    { id = 'console', size = 1, },
+    --                },
+    --                position = 'bottom',
+    --                size = 10,
+    --            },
+    --        },
+    --    },
+    --},
 }
 
