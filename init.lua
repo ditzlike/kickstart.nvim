@@ -17,7 +17,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('settings')
-require('mappings')
 require('style')
 
 require('lazy').setup({
