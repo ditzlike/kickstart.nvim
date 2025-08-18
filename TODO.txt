@@ -1,3 +1,4 @@
 - Neues Repo aufsetzen, alles ausm alten tracken, in .config einfügen
 - Bufferline untersuchen
 - Overseer
+- Fix Obsidian
