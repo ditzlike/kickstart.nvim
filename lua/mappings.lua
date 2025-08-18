@@ -18,8 +18,8 @@ vim.keymap.set('x', 'ö', '^')
 --vim.keymap.set('t', '<F2>', '<C-\\><C-n><C-w>k')
 vim.keymap.set('i', 'üa', '<C-o>%')
 vim.keymap.set('i', 'üq', '<C-o>%<C-o>%<C-o>a')
-vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
-vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
+--vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>') --TODO: does not work. Figure out bufferlines instead
+--vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
 
 -- peartree --
 vim.g.pear_tree_repeatable_expand = 0
@@ -35,10 +35,3 @@ map('n', '<C-k>', cmd('lua vim.lsp.buf.signature_help()'), silenced)
 map('n', '<leader>rn', cmd('lua vim.lsp.buf.rename()'), silenced)
 map('n', '<leader>ca', cmd('lua vim.lsp.buf.code_action()'), silenced)
 map('n', '<C-l>', cmd('lua vim.lsp.buf.format({ async = true })'), silenced)
-
--- telescope -- I want to get rid of these
---local builtin = require('telescope.builtin')
---vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[/] find files]' })
---vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = '[/] live grep]' })
---vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = '[/] buffers]' })
---vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = '[/] help tags]' })
