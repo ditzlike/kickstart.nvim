@@ -9,14 +9,14 @@ return {
         },
         keys = {
             {
-                ']g',
+                '+g',
                 function()
                     require('gitsigns').nav_hunk('next', {}, function() vim.fn.feedkeys('zz', 'n') end)
                 end,
                 desc = 'Next Hunk',
             },
             {
-                '[g',
+                '-g',
                 function()
                     require('gitsigns').nav_hunk('prev', {}, function() vim.fn.feedkeys('zz', 'n') end)
                 end,
