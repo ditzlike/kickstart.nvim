@@ -26,8 +26,8 @@ vim.g.pear_tree_repeatable_expand = 0
 
 -- lsp --
 map('n', 'gD', cmd('lua vim.lsp.buf.declaration()'), { desc = 'Go To Declarations' })
-map('n', ']d', cmd('lua vim.diagnostic.goto_next()', 'zz'), { desc = 'Next Diagnostic' })
-map('n', '[d', cmd('lua vim.diagnostic.goto_prev()', 'zz'), { desc = 'Previous Diagnostic' })
+map('n', '<F2>', cmd('lua vim.diagnostic.goto_next()', 'zz'), { desc = 'Next Diagnostic' })
+map('n', '<F3>', cmd('lua vim.diagnostic.goto_prev()', 'zz'), { desc = 'Previous Diagnostic' })
 map('n', '<leader>rn', cmd('lua vim.lsp.buf.rename()'), { desc = 'Rename Symbol' })
 map('n', '<leader>ca', cmd('lua vim.lsp.buf.code_action()'), { desc = 'Code Action' })
 map('n', '<C-l>', cmd('lua vim.lsp.buf.format({ async = true })'), { desc = 'Format Buffer' })
